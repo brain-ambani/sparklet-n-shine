@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/layout/navbar";
 
 import { CTASection, Footer, HeroSection, PricingSection, ServicesSection, StatsSection, TestimonialsSection } from "@/components/sections";
 
@@ -6,7 +5,7 @@ import { CTASection, Footer, HeroSection, PricingSection, ServicesSection, Stats
 export default function HomePage() {
   return (
     <main>
-      {/* <Navbar /> */}
+
 
       <HeroSection />
       <StatsSection />
