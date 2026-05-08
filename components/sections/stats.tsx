@@ -161,8 +161,8 @@ export function StatsSection() {
                   mb-4 inline-flex items-center gap-2 rounded-full
                   bg-white/20 px-4 py-2 text-white
 
-                  md:bg-slate-100
-                  md:text-slate-700
+                  md:bg-purple-50
+                  md:text-purple-700
                 "
               >
 
@@ -193,7 +193,7 @@ export function StatsSection() {
 
               {/* CTA */}
               <Link href="#">
-                <Button className="mt-5 h-auto rounded-full bg-slate-900 px-5 py-4 text-sm font-semibold text-white transition-all hover:bg-slate-800">
+                <Button className="mt-5 h-auto rounded-full bg-purple-600 px-5 py-4 text-sm font-semibold text-white transition-all hover:bg-purple-700">
 
                   Learn More
 

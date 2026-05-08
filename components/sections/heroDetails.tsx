@@ -71,7 +71,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function HeroDetails() {
   return (
-    <section className="relative overflow-hidden px-4 pt-24 pb-16 md:px-6">
+    <section className="relative overflow-hidden px-4 pt-28 pb-16 md:px-6">
 
       {/* Desktop Layout */}
       <div className="mx-auto hidden max-w-6xl items-start justify-between gap-8 md:flex">
@@ -95,7 +95,7 @@ export function HeroDetails() {
           </div>
 
           <h1 className="text-6xl font-bold leading-tight tracking-tight">
-            Premium Cleaning <br />
+            <span className="text-amber-500">Premium</span> Cleaning <br />
             Services You Can <br />
             Count On
           </h1>
@@ -152,7 +152,7 @@ export function HeroDetails() {
           </div>
 
           <h1 className="text-4xl font-bold leading-tight">
-            Premium Cleaning Services You Can Count On
+            <span className="text-amber-400">Premium</span> Cleaning Services You Can Count On
           </h1>
 
           <p className="mt-5 text-base leading-7 text-white/80">

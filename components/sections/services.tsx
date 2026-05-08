@@ -7,41 +7,43 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
+const DEFAULT_IMAGE = "/images/bnb-cleaning.png";
+
 const services = [
   {
     id: "01",
     title: "Residential Cleaning",
     description:
       "Personalized home cleaning services tailored to your lifestyle. From deep cleans to regular maintenance, we keep your sanctuary spotless.",
-    image: "/images/residential.jpg",
+    image: DEFAULT_IMAGE,
   },
   {
     id: "02",
     title: "Commercial & Office Cleaning",
     description:
       "Create a healthier, more productive workplace with professional cleaning services for offices, retail spaces, and businesses.",
-    image: "/images/office-cleaning.jpg",
+    image: DEFAULT_IMAGE,
   },
   {
     id: "03",
     title: "Move-In / Move-Out Cleaning",
     description:
       "Take the stress out of moving with detailed deep-cleaning for tenants, landlords, and homeowners.",
-    image: "/images/move-in.jpg",
+    image: DEFAULT_IMAGE,
   },
   {
     id: "04",
     title: "Window & Glass Cleaning",
     description:
       "Crystal-clear windows and streak-free glass cleaning for homes and offices.",
-    image: "/images/window.jpg",
+    image: DEFAULT_IMAGE,
   },
   {
     id: "05",
     title: "Post-Construction Cleaning",
     description:
       "We remove dust, debris, and construction residue after renovations or new builds.",
-    image: "/images/construction.jpg",
+    image: DEFAULT_IMAGE,
   },
 ];
 
@@ -130,7 +132,7 @@ export function ServicesSection() {
                       className={cn(
                         "rounded-full border p-2 transition-all duration-300",
                         isOpen
-                          ? "rotate-45 border-slate-900 bg-slate-900 text-white"
+                          ? "rotate-45 border-purple-600 bg-purple-600 text-white"
                           : "border-slate-200 text-slate-400"
                       )}
                     >
@@ -160,7 +162,7 @@ export function ServicesSection() {
                           {service.description}
                         </p>
 
-                        <Button className="mt-5 rounded-full bg-slate-900 text-white hover:bg-slate-800">
+                        <Button className="mt-5 rounded-full bg-purple-600 text-white hover:bg-purple-700">
                           Learn More
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
