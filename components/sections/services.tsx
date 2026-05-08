@@ -48,7 +48,7 @@ const services = [
 ];
 
 export function ServicesSection() {
-  const [openIds, setOpenIds] = useState<string[]>(["02"]);
+  const [openIds, setOpenIds] = useState<string[]>(["01"]);
 
   const toggle = (id: string) => {
     setOpenIds((prev) =>
