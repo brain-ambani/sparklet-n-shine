@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
-import { Phone, Mail, Sparkles, ArrowRight } from 'lucide-react'
+import { Phone, Mail, ArrowRight } from 'lucide-react'
+import { Logo } from '@/components/ui/logo'
 
 const quickLinks = [
   { label: 'Home', href: '/' },
@@ -40,10 +41,8 @@ export function Footer() {
 
           {/* ── Col 1 · Brand ── */}
           <div className="col-span-2 flex flex-col gap-5 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 text-lg font-extrabold tracking-tight">
-              <Sparkles className="h-5 w-5 text-blue-400" />
-              <span>Sparklet</span>
-              <span className="text-blue-400">&amp; Shine</span>
+            <Link href="/" className="mb-4 inline-block transition-transform hover:scale-105">
+              <Logo layout="stacked" light={true} />
             </Link>
 
             <p className="max-w-xs text-sm leading-relaxed text-white/60">

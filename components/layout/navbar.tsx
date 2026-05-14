@@ -2,8 +2,9 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { Menu, X, ArrowUpRight, MessageCircle, Phone } from 'lucide-react'
+import { Menu, X, MessageCircle, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Logo } from '@/components/ui/logo'
 
 const links = [
   { label: 'Home', href: '/' },
@@ -53,9 +54,8 @@ export function Navbar() {
           <div className="flex items-center justify-between px-4 md:px-2">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-1.5 text-lg font-extrabold tracking-tight text-slate-900 md:ml-4">
-              ✨ <span>Sparklet</span>
-              <span className="text-blue-600">&amp; Shine</span>
+            <Link href="/" className="md:ml-4 transition-transform hover:scale-105">
+              <Logo layout="horizontal" />
             </Link>
 
             {/* Desktop Nav */}
