@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sparkletandshine.co.ke"),
   title: "Sparklet & Shine | Professional Cleaning Services",
   description: "Premium residential and commercial cleaning services in Nairobi. Book online via WhatsApp today.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Sparklet & Shine | Professional Cleaning Services",
     description: "Premium residential and commercial cleaning services in Nairobi. Book online via WhatsApp today.",

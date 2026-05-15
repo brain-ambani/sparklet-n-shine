@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Leaf, Users, Target, Award, Sparkles, Heart, ArrowLeft, MessageCircle, Phone } from "lucide-react";
+import { ShieldCheck, Leaf, Users, Target, Award, Sparkles, Heart, MessageCircle, Phone } from "lucide-react";
 import { CTASection, Footer, StatsSection } from "@/components/sections";
 import { motion } from "framer-motion";
 
@@ -38,7 +38,7 @@ const fadeInUp = {
 
 export default function AboutPage() {
   return (
-    <main className="flex min-h-screen flex-col bg-white font-sans">
+    <main className="flex min-h-screen flex-col bg-white font-sans text-slate-900">
       
       {/* Hero Section - Clean & Minimal */}
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-slate-50">
@@ -87,7 +87,8 @@ export default function AboutPage() {
                    src="/images/about_lady_royal_blue_1778827871894.png" 
                    alt="Professional cleaning standards" 
                    fill 
-                   className="object-cover object-top"
+                   className="object-cover"
+                   style={{ objectPosition: '50% 15%' }}
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
                </motion.div>

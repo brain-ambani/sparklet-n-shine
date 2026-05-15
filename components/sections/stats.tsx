@@ -1,79 +1,3 @@
-
-
-// import Image from "next/image";
-// import { ArrowRight, Sparkles } from "lucide-react";
-// import { Button } from "@/components/ui/button";
-
-// const stats = [
-//   { label: "Happy Families Served", value: "500+" },
-//   { label: "Customer Satisfaction", value: "99%" },
-//   { label: "Homes Cleaned", value: "1,000+" },
-//   { label: "Satisfaction Guarantee", value: "100%" },
-// ];
-
-// export function StatsSection() {
-//   return (
-//     <section className="w-full py-20 bg-white">
-//       <div className="container mx-auto px-4">
-        
-//         {/* --- Stats Grid Area --- */}
-//         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-24">
-//           {stats.map((stat, i) => (
-//             <div 
-//               key={i} 
-//               className="group p-8 rounded-3xl bg-[#f5f3ff] transition-all hover:bg-[#ede9fe] flex flex-col gap-2"
-//             >
-//               <p className="text-sm font-medium text-slate-500 uppercase tracking-wide">
-//                 {stat.label}
-//               </p>
-//               <h3 className="text-4xl md:text-5xl font-bold text-slate-900">
-//                 {stat.value}
-//               </h3>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* --- About Overview Area --- */}
-//         <div className="relative max-w-6xl mx-auto">
-//           {/* Main Hero Image */}
-//           <div className="relative h-[450px] md:h-[600px] w-full overflow-hidden rounded-[2.5rem] shadow-2xl">
-//             <Image
-//               src="/images/about-image.jpg" // Ensure this is in your /public folder
-//               alt="Professional cleaning team at work"
-//               fill
-//               className="object-cover"
-//               priority
-//             />
-//             {/* Dark overlay to make the image feel more "premium" */}
-//             <div className="absolute inset-0 bg-black/5" />
-//           </div>
-
-//           {/* Overlapping Content Card */}
-//           <div className="absolute -bottom-12 right-0 md:right-10 w-[92%] md:max-w-md bg-white p-8 md:p-12 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-50">
-//             <div className="flex items-center gap-2 mb-6 text-[#6366f1]">
-//                <Sparkles className="h-5 w-5" />
-//                <span className="text-xs font-bold uppercase tracking-[0.2em]">About Us</span>
-//             </div>
-            
-//             <h2 className="text-3xl md:text-4xl font-bold leading-[1.1] text-slate-900 mb-8">
-//               We Are A Dedicated team of Cleaning Professionals Committed to Making.
-//             </h2>
-
-//             <Button 
-//               className="rounded-full bg-[#6366f1] hover:bg-[#4f46e5] px-8 py-7 h-auto text-lg font-semibold transition-transform hover:scale-105 active:scale-95"
-//             >
-//               Learn More About Us
-//               <ArrowRight className="ml-3 h-5 w-5" />
-//             </Button>
-//           </div>
-//         </div>
-
-//       </div>
-//     </section>
-//   );
-// }
-
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -106,7 +30,6 @@ export function StatsSection({ hideLearnMore }: { hideLearnMore?: boolean }) {
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.15em] text-blue-600 transition-colors duration-300 group-hover:text-blue-200 md:text-xs">
                   {stat.label}
                 </p>
-
                 <h3 className="mt-3 text-4xl font-extrabold tracking-tight text-slate-900 transition-colors duration-300 group-hover:text-white md:text-5xl">
                   {stat.value}
                   <span className="text-yellow-500">.</span>
@@ -119,7 +42,6 @@ export function StatsSection({ hideLearnMore }: { hideLearnMore?: boolean }) {
 
         {/* ---------- About Section ---------- */}
         <div className="relative mt-10">
-
           <div className="flex flex-col overflow-hidden rounded-[2rem] bg-slate-50 md:relative md:block md:h-[420px]">
             {/* Image Container */}
             <div className="relative h-[250px] w-full md:absolute md:inset-0 md:h-full md:w-full">
@@ -128,7 +50,8 @@ export function StatsSection({ hideLearnMore }: { hideLearnMore?: boolean }) {
                 alt="Professional cleaning team at work"
                 fill
                 priority
-                className="object-cover object-top"
+                className="object-cover"
+                style={{ objectPosition: '50% 10%' }}
               />
               <div className="absolute inset-0 bg-black/10 hidden md:block" />
             </div>
@@ -142,18 +65,15 @@ export function StatsSection({ hideLearnMore }: { hideLearnMore?: boolean }) {
                   About Us
                 </span>
               </div>
-
               {/* Heading */}
               <h2 className="text-xl font-bold leading-tight tracking-tight text-slate-900 md:text-2xl">
                 Professional Cleaning Services Designed For Modern Homes.
               </h2>
-
               {/* Description */}
               <p className="mt-3 text-sm leading-6 text-slate-600">
                 Skilled cleaners, eco-friendly products,
                 and spotless results tailored for your home.
               </p>
-
               {/* CTA */}
               {!hideLearnMore && (
                 <Link href="/about">
@@ -165,7 +85,6 @@ export function StatsSection({ hideLearnMore }: { hideLearnMore?: boolean }) {
               )}
             </div>
           </div>
-
         </div>
 
       </div>
